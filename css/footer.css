@@ -1,0 +1,121 @@
+@charset "UTF-8";
+:root {
+  --footer-bg: #1e1231;
+  --text-color: #fff;
+  --accent: #478bf9;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 66px;
+  border-top-left-radius: 64px;
+  border-top-right-radius: 64px;
+  border-color: var(--accent);
+  padding: 40px 0 24px 0;
+  border-width: 4px 4px 0 4px;
+  border-style: solid;
+  background-color: var(--footer-bg);
+  position: relative;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+  font-family: "lexend", sans-serif;
+  max-width: 1640px;
+  width: calc(100% - 60px);
+}
+
+.footer__menu {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.footer__menu .underlined {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+.footer__social-title {
+  font-size: 1rem;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.footer__social-item svg {
+  fill: url(.social-icon-gradient);
+  cursor: pointer;
+}
+
+.footer__social-item svg .social-icon-gradient {
+  --color-stop: var(--accent);
+}
+
+.footer__social-item svg:hover {
+  fill: url(.social-icon-gradient);
+}
+
+.footer__social-item svg:hover .social-icon-gradient {
+  --color-stop: #9dadf2;
+}
+
+@media only screen and (max-width: 1300px) {
+  .footer {
+    border-width: 2px 2px 0 2px;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    align-items: flex-start;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .footer__menu a {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .footer__menu .underlined {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .footer__social-title {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+
+  .footer__social-list {
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+
+  .footer__social-item {
+    width: 27px;
+    height: 27px;
+  }
+
+  .footer__social-item svg {
+    width: 27px;
+    height: 27px;
+  }
+}

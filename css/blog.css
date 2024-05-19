@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+main::before {
+  content: "";
+}
+main::after {
+  content: "";
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article {
+  color: var(--text-1);
+  font-family: "lexend", sans-serif;
+  margin: 70px 0;
+  max-width: 1640px;
+  width: 90%;
+}
+
+.article h1 {
+  font-size: 2rem;
+  text-align: center;
+  opacity: 80%;
+  margin-bottom: 30px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.article p {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  text-indent: 20px;
+}
+
+.article strong {
+  opacity: 80%;
+  font-size: 1.3rem;
+}
